@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+  </head>
+  <body>
+    <div class="container flex bg-black">
+      <div class="left">
+        <div class="close">
+          <img src="svg\crush.svg" alt="" />
+        </div>
+        <div class="home bg-grey rounded m-1">
+          <div class="logo">
+            <img class="invert" src="logo.svg" alt="Logo" />
+          </div>
+          <ul valign="middle">
+            <li><img class="invert" src="home.svg" alt="home" />Home</li>
+            <li><img class="invert" src="search.svg" alt="search" />Search</li>
+          </ul>
+        </div>
+        <div class="library bg-grey rounded m-2">
+          <div class="heading">
+            <img class="invert" src="playlist.svg" alt="playlist" />
+            <h2>Your Library</h2>
+          </div>
+          <div class="songList">
+            <ul id="songList">
+              <!-- <li> -->
+              <!-- <img src="svg/music.svg" alt="" class="a">
+                <div class="info">
+                  <div>Song Name</div>
+                  <div>Sons Artist</div>
+                </div>
+                <div class="playNow"> -->
+              <!-- <span>Play  Now</span> -->
+              <!-- <img src="svg\leftPlayBtn.svg" alt="" class="leftPlayBtn">
+                </div> -->
+              <!-- </li> -->
+            </ul>
+          </div>
+          <div class="footer">
+            <span
+              ><a href="https://www.spotify.com/jp/legal/"
+                ><span>Legal</span></a
+              ></span
+            >
+            <span
+              ><a href="https://www.spotify.com/jp/privacy/"
+                ><span>Privacy Center</span></a
+              ></span
+            >
+            <span
+              ><a href="https://www.spotify.com/jp/legal/privacy.policy/"
+                ><span>Privacy Police</span></a
+              ></span
+            ><br /><br />
+            <span
+              ><a href="https://www.spotify.com/jp/legal/cookies.policy/"
+                ><span>Cookies</span></a
+              ></span
+            >
+            <span
+              ><a href="https://www.spotify.com/jp/legal/privacy.policy/ms3"
+                ><span>About Ads</span></a
+              ></span
+            >
+            <span
+              ><a href="https://www.spotify.com/jp/legal/accossibility/"
+                ><span>Accessibility</span></a
+              ></span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="right bg-grey rounded">
+        <div class="header">
+          <div class="nav flex">
+            <img src="svg\hamburger.svg" class="hamburger" alt="" />
+            <div class="leftArrow">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                color="#ffffff"
+                fill="none"
+              >
+                <path
+                  d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="rightArrow">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                color="#ffffff"
+                fill="none"
+              >
+                <path
+                  d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="signupbtn">Sign up</button>
+            <button class="loginbtn">Log in</button>
+          </div>
+        </div>
+        <div class="mainContainer">
+        <!-- popular aritist -->
+        <div class="spotifyArtistsb spotifyPlaylists">
+          <h2>Popular Artist</h2>
+          <div class="cardContainer flex">
+            <div class="card">
+              <div class="play" id="x">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="image\pritam.jpeg" alt="" />
+              <h4>Pritam</h4>
+              <p>Artist</p>
+            </div>
+
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="image\arijit.jpeg" alt="" />
+              <h4>Arijit Singh</h4>
+              <p>Artist</p>
+            </div>
+
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="image\ar rahman.jpeg" alt="" />
+              <h4>A.R Rahman</h4>
+              <p>Artist</p>
+            </div>
+
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="image\vishal.jpeg" alt="" />
+              <h4>Vishal Mishar</h4>
+              <p>Artist</p>
+            </div>
+
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="image\anirudh.jpeg" alt="" />
+              <h4>Anirudh Ravichander</h4>
+              <p>Artist</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- popular albumbs -->
+
+        <div class="spotifyAlbumbs spotifyPlaylists">
+          <h2>Popular Albumbs</h2>
+          <div class="albumbsContainer cardContainer flex">
+            <div class="alumb">
+              <div class="play">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="image/animal.jpeg" alt="" />
+              <h4>ANIMAL</h4>
+              <p>Manan Bhaedwaj, Vishal Mishra, Jaani</p>
+            </div>
+
+            <div class="alumb">
+              <div class="play">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="image\ektharaj.jpeg" alt="" />
+              <h4>EK Tha Raja</h4>
+              <p>Badshah</p>
+            </div>
+
+            <div class="alumb">
+              <div class="play">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="image/still.jpeg" alt="" />
+              <h4>Still Rollin</h4>
+              <p>Shubh</p>
+            </div>
+
+            <div class="alumb">
+              <div class="play">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="image/aashiqui2.jpeg" alt="" />
+              <h4>Aashiqui 2</h4>
+              <p>Mithoon,AnkitnTiwari,Jeet Gannguli</p>
+            </div>
+
+            <div class="alumb">
+              <div class="play">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="image/moosetape.jpeg" alt="" />
+              <h4>Moosetape</h4>
+              <p>Sidhu Moose Wala</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- popular radio -->
+
+        <div class="spotifyRadio spotifyPlaylists">
+          <h2>Popular radio</h2>
+          <div class="radioContainer cardContainer flex">
+            <div class="radio">
+              <div class="play">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="image/arjitradio.jpeg" alt="" />
+              <h4>Arijit Singh Radio</h4>
+              <p>With Neha Kakkar, Pritam, KK and More</p>
+            </div>
+
+            <div class="radio">
+              <div class="play">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="image/diljit.jpeg" alt="" />
+              <h4>Diljit Dosanjh Readio</h4>
+              <p>With Garry Sandhu, Ranjit Bawa, Amrinder Gill and More</p>
+            </div>
+
+            <div class="radio">
+              <div class="play">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="image/alka.jpeg" alt="" />
+              <h4>Alka Yagnik Readio</h4>
+              <p>With Udit Narayan, Kumar Sanu, Anuradhan Paudwal and More</p>
+            </div>
+
+            <div class="radio">
+              <div class="play">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="image/kumarsanu.jpeg" alt="" />
+              <h4>Kumar Sanu</h4>
+              <p>With Udit Narayan, Alka Yagnik, Anuradhan Paudwal and More</p>
+            </div>
+
+            <div class="radio">
+              <div class="play">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="image/sp.jpeg" alt="" />
+              <h4>S.P.Balasubrahmanyam...</h4>
+              <p>With Mano, Llaiyaraaja, S.Janaki and More</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- featurd card -->
+
+        <div class="spotifyfeatuedCard spotifyPlaylists">
+          <h2>Featurd Card</h2>
+          <div class="featurdContainer cardContainer flex">
+            <div class="featured">
+              <div class="play">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="image/top1.png" alt="" />
+              <h4>Top Songs - Global</h4>
+              <p>
+                Your weekly update of the most played tracks right now - Global.
+              </p>
+            </div>
+
+            <div class="featured">
+              <div class="play">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="image/top2.png" alt="" />
+              <h4>Top Songs - USA</h4>
+              <p>
+                Your weekly update of the most played tracks right now - USA.
+              </p>
+            </div>
+
+            <div class="featured">
+              <div class="play">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="image/top4.jpeg" alt="" />
+              <h4>Top 50 - Global</h4>
+              <p>
+                Your daily update of the most played tracks right now - Global.
+              </p>
+            </div>
+
+            <div class="featured">
+              <div class="play">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="image/top5.jpeg" alt="" />
+              <h4>Top 50 - USA</h4>
+              <p>
+                Your weekly update of the most played tracks right now - USA.
+              </p>
+            </div>
+
+            <div class="featured">
+              <div class="play">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="image/top3.jpeg" alt="" />
+              <h4>Viral 50 - Global</h4>
+              <p>
+                Your daily update of the most played tracks right now - Global.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- spotify playlist -->
+        <div class="spotifyPlaylists">
+          <h2>Spotify Playlist</h2>
+          <div class="playlistContainer cardContainer flex">
+            <div class="playlist">
+              <div class="play">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="image/dinner.jpeg" alt="" />
+              <h4>Dinner With Friends</h4>
+              <p>The perfect soundtrack to those long nights over dinner</p>
+            </div>
+
+            <div class="playlist">
+              <div class="play">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="image/chillhop.jpeg" alt="" />
+              <h4>Chillhop</h4>
+              <p>The perfect soundtrack to those long nights over chillhop</p>
+            </div>
+
+            <div class="playlist">
+              <div class="play">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="image/softpop.jpeg" alt="" />
+              <h4>Soft Pop Hits</h4>
+              <p>
+                The perfect soundtrack to those long nights over Soft Pop Hits
+              </p>
+            </div>
+
+            <div class="playlist">
+              <div class="play">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="image/phonk.jpeg" alt="" />
+              <h4>Chill Phonk</h4>
+              <p>
+                The perfect soundtrack to those long nights over Chill Phonk
+              </p>
+            </div>
+
+            <div class="playlist">
+              <div class="play">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="image/jazz.jpeg" alt="" />
+              <h4>Jazz in the Background</h4>
+              <p>
+                The perfect soundtrack to those long nights over Jazz in the
+                Background
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- spotify orginal products -->
+
+        <div class="spotifyOrginalProducts spotifyPlaylists">
+          <h2>Spotify Orginal Products</h2>
+          <div class="orginalProductContainer cardContainer flex">
+            <div class="orginalProduct">
+              <div class="play">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="image/krishna.jpeg" alt="" />
+              <h4>Shri Krishna Leela(Hindi...</h4>
+              <p>Spotify Studios</p>
+            </div>
+
+            <div class="orginalProduct">
+              <div class="play">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="image/pretkotha.jpeg" alt="" />
+              <h4>Pretkotha(Bengali Horror...</h4>
+              <p>Gourab Tapadar</p>
+            </div>
+
+            <div class="orginalProduct">
+              <div class="play">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="image/joerogen.png" alt="" />
+              <h4>The Joe Rogan Experience</h4>
+              <p>Joe Rogan</p>
+            </div>
+
+            <div class="orginalProduct">
+              <div class="play">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="image\trustorybro.jpeg" alt="" />
+              <h4>True Story Bro! With Trigger...</h4>
+              <p>Spotify</p>
+            </div>
+
+            <div class="orginalProduct">
+              <div class="play">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="image/gopi.jpeg" alt="" />
+              <h4>Gopi Sudhakar Ennenna...</h4>
+              <p>Spotify Studios</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- trending episodes -->
+
+        <div class="spotifytrendingEpisodes spotifyPlaylists">
+          <h2>Trending Episodes</h2>
+          <div class="trendingEpisodesContainer cardContainer flex">
+            <div class="trendingEpisodes">
+              <div class="play">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="image/rjbalaji.jpeg" alt="" />
+              <h4>Welcome back, RJ Balaji-...</h4>
+              <p>Jun 2021 . 15 min</p>
+            </div>
+
+            <div class="trendingEpisodes">
+              <div class="play">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="image/rotten.jpeg" alt="" />
+              <h4>Welcome back, RJ Balaji-...</h4>
+              <p>Jun 2021 . 15 min</p>
+            </div>
+
+            <div class="trendingEpisodes">
+              <div class="play">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="image/ihearyou.jpeg" alt="" />
+              <h4>Welcome back, RJ Balaji-...</h4>
+              <p>Jun 2021 . 15 min</p>
+            </div>
+
+            <div class="trendingEpisodes">
+              <div class="play">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="image/ihearyou.jpeg" alt="" />
+              <h4>Welcome back, RJ Balaji-...</h4>
+              <p>Jun 2021 . 15 min</p>
+            </div>
+
+            <div class="trendingEpisodes">
+              <div class="play">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="image/mahabharat.jpeg" alt="" />
+              <h4>Welcome back, RJ Balaji-...</h4>
+              <p>Jun 2021 . 15 min</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="playbar sticky">
+          <div class="seekbar">
+            <div class="circle"></div>
+          </div>
+          <div class="songContainer flex">
+          <div class="songinfo"></div>
+          <div class="songbutton">
+            <img src="svg\previoussong.svg" alt="" id="previousButton" />
+            <img src="svg\play.svg" alt="" id="playButton" />
+            <img src="svg\nextsong.svg" alt="" id="nextButton" />
+          </div>
+          <div class="songtime"></div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
